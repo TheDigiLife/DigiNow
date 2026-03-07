@@ -1,0 +1,11 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports.biome": "explicit",
+    "source.action.useSortedProperties.biome": "explicit",
+    "source.fixAll.biome": "explicit"
+  },
+  "[javascript][javascriptreact][typescript][typescriptreact][jsonc][json][html][tailwindcss][css][snippets]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  }
+}
