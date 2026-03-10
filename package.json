@@ -27,6 +27,7 @@
     "check:fix": "Auto-fix all linting and formatting issues"
   },
   "dependencies": {
+    "@expo/vector-icons": "^15.0.2",
     "expo": "~55.0.5",
     "expo-constants": "~55.0.7",
     "expo-linking": "~55.0.7",

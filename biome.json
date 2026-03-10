@@ -29,7 +29,11 @@
       },
       "style": {
         "noNegationElse": "error",
-        "useConsistentArrayType": "error"
+        "useConsistentArrayType": "error",
+        "useImportType": {
+          "options": { "style": "separatedType" },
+          "level": "warn"
+        }
       },
       "suspicious": {
         "noArrayIndexKey": "warn",

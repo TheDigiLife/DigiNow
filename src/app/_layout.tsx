@@ -1,17 +1,18 @@
 import { Slot } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, useColorScheme } from 'react-native';
-import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import { StyleSheet, useColorScheme, View } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { colors } from '@/theme';
 
 export default function App() {
   const colorScheme = useColorScheme();
 
   return (
     <SafeAreaProvider>
-      <SafeAreaView style={styles.container}>
+      <View style={styles.container}>
         <Slot />
         <StatusBar style={colorScheme === 'dark' ? 'light' : 'dark'} />
-      </SafeAreaView>
+      </View>
     </SafeAreaProvider>
   );
 }
@@ -19,6 +20,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: colors.background,
   },
 });
