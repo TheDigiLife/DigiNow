@@ -15,8 +15,8 @@
     "prefix": "bxp",
     "scope": "typescript",
     "body": [
-      "export type { ${1:ComponentName}Props } from \"./${1:ComponentName}\";\n\n$0",
-      "export { default as ${1:ComponentName} } from \"./${1:ComponentName}\";"
+      "export type { ${1:ComponentName}Props } from \"./${1:ComponentName}\";",
+      "export { default as ${1:ComponentName} } from \"./${1:ComponentName}\";\n\n$0"
     ],
     "description": "Component Barrel Export"
   },
@@ -24,8 +24,8 @@
     "prefix": "bxpd",
     "scope": "typescript",
     "body": [
-      "export type { ${1:ComponentName}Props } from \"./${1:ComponentName}\";\n\n$0",
-      "export { default, default as ${1:ComponentName} } from \"./${1:ComponentName}\";"
+      "export type { ${1:ComponentName}Props } from \"./${1:ComponentName}\";",
+      "export { default, default as ${1:ComponentName} } from \"./${1:ComponentName}\";\n\n$0"
     ],
     "description": "Component Barrel Export with default"
   },

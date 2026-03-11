@@ -1,25 +1,19 @@
-import { Slot } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, useColorScheme, View } from 'react-native';
+import { Stack } from 'expo-router';
+import { PaperProvider } from 'react-native-paper';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { colors } from '@/theme';
+
+export const unstable_settings = {
+  anchor: '(tabs)',
+};
 
 export default function App() {
-  const colorScheme = useColorScheme();
-
   return (
     <SafeAreaProvider>
-      <View style={styles.container}>
-        <Slot />
-        <StatusBar style={colorScheme === 'dark' ? 'light' : 'dark'} />
-      </View>
+      <PaperProvider>
+        <Stack screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="(tabs)" />
+        </Stack>
+      </PaperProvider>
     </SafeAreaProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: colors.background,
-  },
-});
